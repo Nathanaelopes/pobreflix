@@ -1,0 +1,92 @@
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.limelight-regular {
+    font-family: "Limelight", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('img/padrao-sem-emenda-com-livros-de-papel-biblioteca-domestica-pilhas-de-livros-oculos-em-estilo-doodle-ilustracao-desenhada-a-mao_192280-123.png');
+}
+.login{
+    background-color: #bda88dde;
+    border-radius: 10px;
+    width: 400px;
+    padding: 40px;
+    border: 1px solid rgb(21, 20, 20);
+   
+
+}
+
+
+.login h2{
+    margin-bottom: 30px;
+    font-size: 30px;
+    color:  #baf3f6;
+    text-align: center;
+    letter-spacing: 5px;
+    font-family: "Limelight", sans-serif;
+}
+
+.login .box-user{
+    position: relative;
+}
+
+.login .box-user input{
+width: 100%;
+padding: 10px 0;
+outline: none;
+border: 0;
+background: transparent;
+border-bottom: 1px solid #fff;
+color: #fff;
+font-size: 16px;
+margin-bottom: 30px;
+}
+
+.login .box-user label{
+    position: absolute;
+    top: 0; left: 0; padding: 10px 0;
+    color: #ffff;
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5px;
+}
+.login .box-user input:focus~label,
+.login .box-user input:valid~label
+{
+    top: -20px;
+    left:0;
+    color: 03e9f4;
+    font-size: 12px;
+    transition: 0.5s;
+}
+.forget{
+    font-size: 12px;
+    color: white;
+    float: right;
+    font-size: 13px;
+}
+.btn{
+    position: relative;
+    display:inline-block;
+    padding: 12px 20px;
+    color: #03e9f4;
+    text-decoration: none;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 700;
+    margin-top: 20px;
+    transition: .5s;
+    overflow: hidden;
+}

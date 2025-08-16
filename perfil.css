@@ -1,0 +1,146 @@
+
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+#p{
+color: aliceblue;
+width: 120px;
+ height: 150px;
+
+}
+#fav{
+    background-color: chartreuse;
+    width: 150px; height: 28px;
+    float: right;
+    margin-top: -30px;
+    border-radius: 15px;
+    position: relative;
+    border: 3px solid transparent;
+        
+        animation: borda-movimento 2s linear infinite;}
+    
+
+
+    @keyframes borda-movimento {
+        0% {
+            border-top-color: #3498db;
+            border-right-color: #3498db;
+            border-bottom-color: #3498db;
+            border-left-color: #3498db;
+        }
+        25% {
+            border-top-color: #e74c3c;
+            border-right-color: #e74c3c;
+            border-bottom-color: #e74c3c;
+            border-left-color: #e74c3c;
+        }
+        50% {
+            border-top-color: #f39c12;
+            border-right-color: #f39c12;
+            border-bottom-color: #f39c12;
+            border-left-color: #f39c12;
+        }
+        75% {
+            border-top-color: #2ecc71;
+            border-right-color: #2ecc71;
+            border-bottom-color: #2ecc71;
+            border-left-color: #2ecc71;
+        }
+        100% {
+            border-top-color: #3498db;
+            border-right-color: #3498db;
+            border-bottom-color: #3498db;
+            border-left-color: #3498db;
+        }
+}
+a{
+    color: aliceblue;
+    
+}
+
+#img{
+    background-color: black;
+}
+
+#p{
+    color: rgb(253, 251, 251);
+    font-family: "Savate", sans-serif;
+    font-size: 20px;
+    margin-top: -15px;
+}
+
+
+.savate-uniquifier {
+    font-family: "Savate", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+ 
+#conta{
+    color: aliceblue;
+    font-size: 20px;
+    font-family: "Savate", sans-serif;
+   
+    margin-left :270px;
+    margin-top: -75px;
+}
+
+b{
+    padding: 3px;
+    border-radius: 5px;
+    background-color: #0eaaf3;
+    letter-spacing: 3px;
+    line-height: 5px;
+}
+#perfil{
+    border-radius: 100%;
+    width: 150px; height: 150px;
+    background-image: url('/img/um-menino-com-um-capuz-e-uma-camisola-com-um-capuchao_1230457-47528.avif');
+    background-size: cover;
+    margin-top: -120px;
+    border: 2px solid white;
+}
+
+ 
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+ 
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    min-height: 100vh;
+    color: black;
+      
+     background: linear-gradient(to bottom, rgb(20, 1, 36), rgb(38, 38, 39)); 
+     
+      
+
+}
+.login{
+   
+border: 1px solid white;
+  background: linear-gradient(to bottom, rgb(2, 81, 83), rgb(1, 1, 83)); 
+
+    border-radius: 10px;
+    width: 470px; height: 620px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    }
+
+ 
+ 

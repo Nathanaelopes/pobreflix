@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="cadastro/cad2.css">
+    <link rel="shortcut icon" href="/img/coruja-sabia-em-cima-de-uma-pilha-de-livros_1308-163254.avif" type="image/x-icon">
+</head>
+<body>  
+
+    
+    
+       <div id="filho">
+
+
+        </div>
+    <div id="pai">
+
+        <div id="infor">
+
+            <form>
+ <h1>Cadastro</h1>
+
+ <label> Primeiro nome <br>
+   
+    <input id="Pnome" type="text" placeholder="Ex: Maria" required pattern="[a-zA-Z\s]+" title="Apenas letras e espaços são permitidos">
+    
+</label> <br><br>
+
+<label>
+ Email <br>
+ <input id="email" type="email" placeholder="Não obrigatório" required>
+</label> <br><br>
+
+<label>
+Senha <br>
+ <input id="senha" type="password" placeholder="Crie uma senha segura"   required>
+   
+</label> <br><br>
+
+<div id="cad">
+
+    <label>
+ Sobrenome <br>
+ <input id="Snome" type="text" placeholder="Ex: Lopes" required > <br> <br>
+ </label>
+ 
+ <label>
+ Celular <br>
+ <input id="cel" type="tel" placeholder="Não obrigatório"> <br> <br>
+</label>
+
+<label>
+Confirmar senha <br>
+ <input id="Csenha" type="password" placeholder="Confirme sua senha" id="y" required> <br> 
+</label>
+
+</div>
+ 
+
+  
+
+
+ <br>
+ <h3>Gênero</h3> 
+
+
+<div id="input">
+    
+<p><input class="input" type="radio" value="kkkkkk" name="kkk">Masculino</p>
+<p><input class="input" type="radio" value="kkkkkk" name="kkk">Feminino</p>
+<p><input class="input" type="radio" value="kkkkkk" name="kkk">Outros</p>
+<p><input class="input" type="radio" value="kkkkkk" name="kkk">Prefiro nao dizer</p>
+</div> 
+</form>
+ <Input type="submit" id="botao" value="Cadastrar-se" onclick="bla()">
+<div id="conta"><p>Já tem uma conta?<a href="login2.html"> Login</a></p></div>
+
+
+        </div>
+       
+   
+
+    </div>
+
+
+    <Script>
+    
+
+function bla(){
+
+    Pnome= document.getElementById('Pnome').value;
+    email= document.getElementById('email').value;
+    Snome= document.getElementById('Snome').value;
+    
+
+    x=document.getElementById('senha').value;
+    sen= x.length
+    y=document.getElementById('Csenha').value;
+    i=document.getElementsByClassName('input').value;
+    
+
+    if (x===y && x!='' && y!='' && Pnome!='' && Snome!=""){
+        alert('você se cadastrou em nosso site com sucesso! agora você será redirecionado para nossa tela de login. Depois de logar, você já terá acesso ao nosso site!')
+        window.location.href='login2.html';
+    } 
+
+    else if (Pnome =='' || Snome ==''  ){
+        alert('Campo Primeiro Nome, Sobrenome e Senha são obrigatórios')
+
+    }
+    
+    
+    
+    else if (sen < 5){
+        document.getElementById('senha').style.color='red';
+        alert('Senha Fraca, entrada somete com senha forte');
+    } 
+
+     else if (sen < 7){
+        alert('Senha Média, entrada somete com senha forte');
+        document.getElementById('senha').style.color='yellow';
+
+    } 
+
+     else if (sen < 9){
+        alert('Senha Forte');
+        document.getElementById('senha').style.color='green';
+
+    } 
+
+    else if (x!=Csenha || y!=senha) {
+        alert('seus senhas estão divergentes!')
+    } 
+    
+    else if ( Pnome == '' && email == '' && Snome == '' && x == '' && y =='') {
+  
+        alert('Seus dados estao em branco!')
+    }
+
+
+
+    
+}
+
+
+/*const array=[1,2,3,4,5,8,7,4]
+
+let soma=0;
+
+for(let i=0; i <array.length;i++){ 
+
+soma += array[i]
+    }
+
+    alert(soma)*/
+/*
+    Array=[1,2,3,5,8,7,8,9,10,50]
+
+    soma=0
+
+    for( i=0; i<Array.length; i++){
+soma+=Array[i];
+    }
+    alert(soma)
+    */
+
+/*
+num= [1,5,7,8,9]
+
+maiornum= Math.max(...num)
+alert(maiornum) */
+
+
+</Script>
+</body>
+</html>
